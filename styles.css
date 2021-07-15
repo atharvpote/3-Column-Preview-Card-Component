@@ -1,0 +1,91 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Lexend Deca', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 1.5rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    border-radius: 10px;
+    margin: 5rem auto;
+    max-width: 375px;
+    overflow: hidden;
+}
+
+.card {
+    color: hsl(0, 0%, 95%);
+    padding: 5rem 3rem;
+}
+
+.card__heading {
+    font-family: 'Big Shoulders Display', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-size: 5rem;
+}
+
+.card--sedans {
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card--suvs {
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card--luxury {
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card__content {
+    color: hsla(0, 0%, 100%, 0.75);
+    margin-bottom: 4rem;
+}
+
+.card__link {
+    background-color: hsl(0, 0%, 95%);
+    border-radius: 30px;
+    border: 2px solid hsl(0, 0%, 95%);
+    padding: 1rem 3rem;
+    transition: background 0.3s, color 0.3s;
+}
+
+.card__link:hover {
+    background-color: transparent;
+    color: hsl(0, 0%, 95%);
+}
+
+.card__link--sedans {
+    color: hsl(31, 77%, 52%);
+}
+
+.card__link--suvs {
+    color: hsl(184, 100%, 22%);
+}
+
+.card__link--luxury {
+    color: hsl(179, 100%, 13%);
+}
+
+@media screen and (min-width:768px) {
+    .container {
+        display: flex;
+        max-width: 1024px;
+    }
+
+    .card {
+        padding-left: 4rem;
+        padding-right: 4rem;
+    }
+
+    .card__content {
+        margin-bottom: 10rem;
+    }
+}
